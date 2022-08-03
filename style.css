@@ -1,0 +1,101 @@
+:root {
+    --black: rgb(41, 41, 41);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+/* 
+#map {
+    height: 180px;
+    width: 180px;
+}
+
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+    display: none;
+}
+
+.leaflet-control-attribution.leaflet-control {
+    font-size: x-small;
+} */
+
+.main {
+    margin: 30px;
+}
+
+.location::before {
+    content: 'location set to: ';
+}
+
+.location {
+    padding: 8px 0;
+    margin-bottom: 30px;
+}
+
+#searchbtn,
+#searchbtn:focus {
+    padding: 0px 8px;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+#searchbtn+span {
+    /* color: red; */
+    margin: 0 0 3px 5px;
+}
+
+.input {
+    /* margin-top: 40px */
+    margin: 50px 0 50px 20px;
+}
+
+.input>*,
+span {
+    vertical-align: bottom;
+}
+
+#weatherbtn,
+#locationbtn,
+#searchbtn {
+    height: 30px;
+
+    background: white;
+    border: 1px solid black;
+}
+
+#weatherbtn {
+    padding: 5px 10px;
+}
+
+#locationbtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 2px;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+button:active {
+    color: white;
+    background: var(--black) !important;
+}
+
+.canvascontainer {
+    position: relative;
+    width:min(90vw, 1000px);
+}
+#chart{
+    position: relative;
+}
